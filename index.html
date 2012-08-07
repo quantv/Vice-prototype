@@ -1,90 +1,232 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Prototype</title>
-	<link href="css/reset.css" rel="stylesheet" type="text/css" />
-	<link href="css/global.css" rel="stylesheet" type="text/css" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link href="css/redmond/jquery-ui-1.8.22.css" rel="stylesheet" type="text/css" />
-	
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui-1.8.22.min.js"></script>
-	
-	<script type="text/javascript">
-		$(function(){
-			$('#tabs').tabs();
-		});
-	</script>
+    <title>Prototype</title>
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/common_ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/redmond/jquery-ui-1.8.22.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.22.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#tabs').tabs();
+            $('#tabs ul').removeClass('ui-corner-all');
+            //$('#datepicker').datepicker();
+        });
+    </script>
 </head>
 <body>
-	<div id="container">
-			<div class="row" id="header">
-				<div class="col12 last">
-					<ul id="head-menu">
-						<li class="selected col3 last"><a href="#">Vice</a></li>
-						<li><a href="#" >Home</a></li>
-						<li><a href="#" >MySpace</a></li>
-						<li><a href="#" >Contacts</a></li>
-						<li><a href="#" >Settings</a></li>
-						<li><a href="#" >IM</a></li>
-					</ul>
-				<div class="clear"></div>
-					<ul id="breadcrumb">
-						<li><a href="#">Home ></a></li>
-						<li><a href="#">Contacts ></a></li>
-						<li><a href="#" class="last">Nikki Nguyen</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row full-height" id="main">
-				<div class="col3 left" id="col-left">
-					<div class="block">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</div>
-					<div class="block">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</div>
-					<div class="block-last"></div>
-				</div>
-				<div class="col6" id="col-center">
-					<div id="tabs">
-						<ul>
-							<li><a href="#tabs-1">Nunc tincidunt</a></li>
-							<li><a href="#tabs-2">Proin dolor</a></li>
-							<li><a href="#tabs-3">Aenean lacinia</a></li>
-						</ul>
-						<div id="tabs-1">
-							<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-						</div>
-						<div id="tabs-2">
-							<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-						</div>
-						<div id="tabs-3">
-							<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-							<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-						</div>
-					</div>
-					</p>
-				</div>
-				<div class="col3 last right" id="col-right">
-					<div class="widget">
-						<div class="widget-item-admin"></div>
-						<h3>On going projects</h3>
-						<div class="widget-content">
-							Saga<br/>
-							Office<br/>
-						</div>
-					</div>
-					<div class="widget">
-						<div class="widget-item-admin"></div>
-						<h3>Utility</h3>
-						<div class="widget-content">
-							Item<br/>
-							Item<br/>
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
+    <div id="container">
+        <div class="row" id="header">
+            <div class="col3 last logo">
+                <img src="images/vice-logo.png" />
+            </div>
+            <div class="col9 last">
+                <ul id="head-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">MySpace</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">IM</a></li>
+                    <li><a href="#">E-Mail</a></li>
+                </ul>
+                <ul class="user-functions">
+                    <li class="creator green">
+                        <div class="icon green button-add" title="">
+                            <div class="icon-16 icon-16-white-plus-large">
+                            </div>
+                        </div>
+                        <div class="bd green">
+                            <input type="text">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row full-height" id="main">
+            <div class="col12 full-height">
+                <div class="row">
+                    <div class="col12">
+                        <ul id="breadcrumb">
+                            <li><a href="#">Home ></a></li>
+                            <li><a href="#">Contacts ></a></li>
+                            <li><a href="#" class="last">Nikki Nguyen</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col3 col-left" id="col-left">
+                        <div class="equal-height">
+                            <div class="block profile">
+                                <span class="img"><a href="#">
+                                    <img alt="Defaultavatar_default" src="images/noavatar.png"></a> </span>
+                                <div class="bd">
+                                    <div class="user-section">
+                                        <a href="#" class="user-name">Nikki Nguyen</a>
+                                        <p>
+                                            12/5/1988</p>
+                                        <p>
+                                            84-985-65-9285</p>
+                                        <p>
+                                            4-39446509</p>
+                                        <p>
+                                            ext.108</p>
+                                    </div>
+                                </div>
+                                <div class="clear">
+                                </div>
+                            </div>
+                            <div class="block bcard">
+                                <span class="img"><a href="#">
+                                    <img alt="Defaultavatar_default" src="images/vg.png"></a> </span>
+                                <div class="bd">
+                                    <div class="user-section">
+                                        <h4>
+                                            Manager</h4>
+                                        <p>
+                                            Multimedia</p>
+                                        <p>
+                                            Hanoi Office</p>
+                                    </div>
+                                </div>
+                                <div class="clear">
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div id="datepicker">
+                                </div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <div class="block last">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col7" id="col-center">
+                        <div id="stream">
+                            <ul class="content">
+                                <li class="image-block object">
+                                    <div class="comment-box">
+                                        <div class="inner">
+                                            <div class="comment-content">
+                                                Go go go!
+                                            </div>
+                                            <div class="comment-box-arrow">
+                                                <div class="arrow-border">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tabs">
+                            <ul>
+                                <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                                <li><a href="#tabs-2">Proin dolor</a></li>
+                                <li><a href="#tabs-3">Aenean lacinia</a></li>
+                            </ul>
+                            <div id="tabs-1">
+                                <p>
+                                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec
+                                    arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.
+                                    Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper
+                                    leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales
+                                    tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel
+                                    pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum.
+                                    Nunc tristique tempus lectus.</p>
+                                <p>
+                                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec
+                                    arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.
+                                    Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper
+                                    leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales
+                                    tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel
+                                    pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum.
+                                    Nunc tristique tempus lectus.</p>
+                                <p>
+                                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec
+                                    arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.
+                                    Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper
+                                    leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales
+                                    tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel
+                                    pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum.
+                                    Nunc tristique tempus lectus.</p>
+                                <p>
+                                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec
+                                    arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.
+                                    Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper
+                                    leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales
+                                    tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel
+                                    pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum.
+                                    Nunc tristique tempus lectus.</p>
+                            </div>
+                            <div id="tabs-2">
+                                <p>
+                                    Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra
+                                    massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget
+                                    luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean
+                                    aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent
+                                    in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat
+                                    nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque
+                                    convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod
+                                    felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                            </div>
+                            <div id="tabs-3">
+                                <p>
+                                    Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate,
+                                    pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.
+                                    Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia
+                                    nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo
+                                    pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem
+                                    enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                <p>
+                                    Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam
+                                    ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing
+                                    velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula
+                                    faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero
+                                    sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor
+                                    ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas
+                                    commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit
+                                    hendrerit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2 last col-right" id="col-right">
+                        <div class="equal-height">
+                            <div class="widget">
+                                <div class="widget-item-admin">
+                                </div>
+                                <h3>
+                                    On going projects</h3>
+                                <div class="widget-content">
+                                    Saga<br />
+                                    Office<br />
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <div class="widget-item-admin">
+                                </div>
+                                <h3>
+                                    Utility</h3>
+                                <div class="widget-content">
+                                    Item<br />
+                                    Item<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row footer">
+            <div class="col12 white">
+                <img src="images/vice-logo.png" class="logo" />
+            </div>
+        </div>
+    </div>
 </body>
 </html>

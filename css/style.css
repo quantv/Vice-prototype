@@ -1,52 +1,305 @@
+/**BUTTONS***/
+#header .button-add
+{
+    width:40px;
+    height:40px;
+    float:left;
+}
+
+#header .user-functions
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 40px;
+}
+#header .logo img
+{
+    height:40px;
+}
+.footer img.logo
+{
+    height:80px;
+    background:none;
+}
+.comment-box
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.comment-box .comment-content
+{
+    margin: 10px 20px;
+}
+/******/
+.bcard img
+{
+    width: 100px;
+}
+.bcard span.img
+{
+    float: left;
+    border: 1px solid #DBDBDB;
+    margin-right: 9px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    min-height: 55px;
+}
+.bcard span.img p
+{
+    text-transform: uppercase;
+    font-size: 1.05em;
+    color: #525252;
+}
+.bcard .bd p:last-child
+{
+    text-transform: uppercase;
+}
+.avatar-small
+{
+    width: 50px;
+    height: 50px;
+}
+.profile span.img
+{
+    background-color: transparent;
+    padding: 0;
+    border: 1px solid #DBDBDB;
+    background-color: white;
+    margin-right: 9px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    float: left;
+}
+.profile img
+{
+    width: 100px;
+    height: 100px;
+}
+.profile .bd p
+{
+    font-size: 0.8em;
+    line-height: 15px;
+}
+.user-name
+{
+    color: #525252;
+    font-weight: bold;
+    font-size: 1.05em;
+    padding-top: 6px;
+}
+.edit-profile
+{
+    display: inline-block;
+    font-size: 0.8em;
+    color: #3376a4;
+    font-weight: normal;
+    padding-top: 3px;
+}
 /*** Widgets ***/
-.widget { padding: 10px 5px 10px 20px;}
-.widget h3{
-word-wrap: break-word;
-border-bottom: 1px solid #E5E5E5;
-margin-bottom: 10px;
-padding-bottom: 5px;
+.widget
+{
+    padding: 10px 5px 10px 20px;
+}
+.widget h3
+{
+    word-wrap: break-word;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.ui-tabs-panel
+{
+    background: #ffffff !important;
 }
 /***/
-.block{border-top: 1px solid #fff; border-bottom:1px solid #e0e0e0; padding: 10px 5px 10px 20px;}
-.block-last{border-top: 1px solid #fff; height:1px;}
+.block
+{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 5px 10px 20px;
+}
+.block.last
+{
+    border-bottom: none;
+}
 /****/
-.right{border-left: 1px solid #e0e0e0; height:100%;background: #f6f6f6;}
-.full-height{height:100%;}
-.left{background: #f6f6f6; border-right:1px solid #e0e0e0; height:100%;}
+.full-height
+{
+    height: 100%;
+}
+.col-left
+{
+    background: #f6f6f6;
+}
 /** MENU + Breadcrumb**/
-ul#head-menu {width:100%; height:40px; background: #5092BD; border-bottom: 1px solid #3A6A8A;}
-ul#head-menu li{ display:block; float:left; padding:5px; border-right: 1px solid #337fb2; text-align:center;}
-ul#head-menu li a{color:#fff; line-height:30px;}
-ul#head-menu li:hover, ul#head-menu li.selected {background: #4680a5;}
-ul#breadcrumb{width:100%; height:20px; background: #59a4d6;}
-ul#breadcrumb li{display:blocl; float:left; margin-left: 5px; margin-right:5px; line-height:20px;}
-ul#breadcrumb li a{color:#fff;}
-#breadcrumb li a.last {color:#000;}
-#header{position: fixed; top:0; z-index:100;}
+.logo
+{
+    background: #4680a5;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.menu
+{
+    width: 77.95% !important;
+}
+ul#head-menu
+{
+    width: 100%;
+    height: 40px;
+    background: #5092BD;
+}
+ul#head-menu li
+{
+    display: block;
+    float: left;
+    padding: 5px;
+    border-right: 1px solid #337fb2;
+    text-align: center;
+    min-width: 80px;
+}
+ul#head-menu li a
+{
+    color: #fff;
+    line-height: 30px;
+}
+ul#head-menu li:hover, ul#head-menu li.selected
+{
+    background: #4680a5;
+}
+ul#breadcrumb
+{
+    width: 100%;
+    height: 20px;
+    background: #fbfbfb;
+}
+ul#breadcrumb li
+{
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 20px;
+}
+ul#breadcrumb li a
+{
+    color: #0000ff;
+}
+#breadcrumb li a.last
+{
+    color: #000;
+}
+#header
+{
+    background: #5092BD;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
 /** LAYOUTS **/
-.row {
-width: 100%;
-max-width: 1440px;
-min-width: 755px;
-margin: 0 auto;
-overflow: hidden;
-clear: both;
+.green
+{
+    background: #6ABD3D;
 }
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9,.col10, .col11, .col12{
-	float:left;
-	min-height:1px;
-	margin-right:3.8%;
+.white
+{
+    background: #ffffff;
 }
-.row .col1{ width:4.85%;}
-.row .col2{ width:13.45%;}
-.row .col3{ width:22.05%;}
-.row .col4{ width:30.75%;}
-.row .col5{ width:39.45%;}
-.row .col6{ width:48%;}
-.row .col7{ width:56.75%;}
-.row .col8{ width:65.4%;}
-.row .col9{ width:74.05%;}
-.row .col10{ width:82.7%;}
-.row .col11{ width:91.35%;}
-.row .col12{ width:100%; float:left;}
-.row .last{margin-right:0px;}
+.row
+{
+    width: 100%;
+    max-width: 1440px;
+    min-width: 755px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+}
+.row .equal-height
+{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+.col-left .equal-height
+{
+    border-right: 1px solid #e0e0e0;
+    background: #f6f6f6;
+}
+.col-right .equal-height
+{
+    border-left: 1px solid #e0e0e0;
+    background: #ffffff;
+}
+.rightcol
+{
+    border-right: none;
+    background: #ffffff;
+}
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12
+{
+    float: left;
+    min-height: 1px; /*margin-right:0.7%;*/
+}
+.row .col1
+{
+    width: 8%;
+}
+.row .col2
+{
+    width: 16%;
+}
+.row .col3
+{
+    width: 24%;
+}
+.row .col4
+{
+    width: 33%;
+}
+.row .col5
+{
+    width: 41%;
+}
+.row .col6
+{
+    width: 49%;
+}
+.row .col7
+{
+    width: 58%;
+}
+.row .col8
+{
+    width: 66.6%;
+}
+.row .col9
+{
+    width: 74%;
+}
+.row .col10
+{
+    width: 83.3%;
+}
+.row .col11
+{
+    width: 91.6%;
+}
+.row .col12
+{
+    width: 100%;
+    float: left;
+}
+.row .last
+{
+    margin-right: 0px;
+}

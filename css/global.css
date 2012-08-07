@@ -1,6 +1,39 @@
-html{height:100%;}
-body{ height:100%;}
-h3{font-weight: bold;color: #525252;}
-#container{height:100%;}
-.clear{clear: both;}
-#main {margin-top:62px;}
+html
+{
+    height: 100%;
+}
+body
+{
+    font-family: Verdana;
+    font-size: 13px;
+    line-height: 20px;
+    background: #fbfbfb;
+}
+h3
+{
+    font-weight: bold;
+    color: #525252;
+}
+h4
+{
+    color: #525252;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+#container
+{
+    margin:0 auto;
+    height:100%;
+    min-height: 100% !important;
+    max-width: 1440px;
+    position: relative;
+    border-bottom:1px solid #e0e0e0;
+}
+.clear
+{
+    clear: both;
+}
+#main
+{
+    margin-top: 41px;
+}
